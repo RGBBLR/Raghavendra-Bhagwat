@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raghavendra V Bhagwat - CV</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+      @font-face {
+        font-family: 'LucideIcons';
+        /* Using unpkg URL as per initial instructions */
+        src: url(https://cdn.jsdelivr.net/npm/lucide-static@latest/font/Lucide.ttf) format('truetype');
+      }
+      .lucide {
+        font-family: 'LucideIcons';
+        font-size: 1.25rem; /* Adjust size as needed */
+        line-height: 1;
+        vertical-align: middle;
+        margin-right: 0.5rem; /* Space between icon and text */
+        display: inline-block; /* Ensure proper alignment */
+      }
+      /* Define icon content using CSS pseudo-elements */
+      .lucide-mail::before { content: "\ecab"; }
+      .lucide-phone::before { content: "\ed2d"; }
+      .lucide-linkedin::before { content: "\ec9f"; }
+      .lucide-map-pin::before { content: "\ecb2"; }
+      .lucide-languages::before { content: "\ec92"; }
+      .lucide-briefcase::before { content: "\ec11"; }
+      .lucide-graduation-cap::before { content: "\ec6c"; }
+      .lucide-wrench::before { content: "\ee1d"; }
+      .lucide-sparkles::before { content: "\ed9e"; }
+      .lucide-award::before { content: "\ebf7"; }
+      /* Added icon for Projects */
+      .lucide-clipboard-list::before { content: "\ec2f"; }
+
+
+      /* Basic styling */
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #f8fafc; /* cool-gray-50 */
+        color: #1f2937; /* cool-gray-800 */
+      }
+      /* Timeline styling */
+      .timeline-item::before {
+        content: '';
+        position: absolute;
+        left: -0.625rem; /* Adjust based on circle size and line position */
+        top: 0.5rem; /* Align with the text */
+        width: 1.25rem; /* Circle diameter */
+        height: 1.25rem; /* Circle diameter */
+        background-color: #3b82f6; /* blue-500 */
+        border-radius: 9999px; /* Make it a circle */
+        border: 3px solid #ffffff; /* White border against section background */
+        z-index: 10;
+      }
+      .timeline-line {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0.5rem; /* Start below the circle */
+        bottom: -0.5rem; /* Extend below the item */
+        width: 2px;
+        background-color: #d1d5db; /* cool-gray-300 */
+      }
+       /* Ensure the last item's line doesn't extend too far */
+      .timeline-item:last-child .timeline-line {
+         bottom: auto;
+         height: calc(100% - 1.5rem); /* Adjust based on circle/text alignment */
+      }
+
+      /* Styling for alternating section backgrounds */
+      section:nth-child(odd) {
+         /* background-color: #f9fafb; /* gray-50 - subtle variation */
+         /* padding-top: 2.5rem;
+         padding-bottom: 2.5rem; */
+         /* Removed alternating background for cleaner look, keeping padding consistent */
+      }
+       section:nth-child(even) {
+         /* background-color: #ffffff; White */
+         /* padding-top: 2.5rem;
+         padding-bottom: 2.5rem; */
+      }
+       /* Add padding to all sections for consistency */
+       section {
+           padding-bottom: 2.5rem; /* Replaces mb-10 */
+       }
+       /* Remove bottom margin from last section */
+       section:last-of-type {
+           padding-bottom: 0;
+       }
+
+
+    </style>
+</head>
+<body class="antialiased">
+
+    <div class="container mx-auto max-w-5xl p-6 md:p-12 bg-white shadow-lg rounded-lg my-10">
+
+        <header class="text-center mb-10 border-b pb-6 border-gray-200">
+            <h1 class="text-4xl font-bold text-blue-600 mb-2">RAGHAVENDRA V BHAGWAT</h1>
+            <h2 class="text-xl font-medium text-gray-700 mb-4">Planning & Project Management Professional | Mixed-Use Developments | LEED Green Associate</h2>
+            <div class="flex flex-wrap justify-center gap-x-6 gap-y-2 text-gray-600">
+                <a href="mailto:raghubhagwat@gmail.com" class="hover:text-blue-600 flex items-center transition duration-150 ease-in-out">
+                    <span class="lucide lucide-mail"></span>raghubhagwat@gmail.com
+                </a>
+                <span class="flex items-center">
+                    <span class="lucide lucide-phone"></span>08904145838
+                </span>
+                <a href="https://linkedin.com/in/RaghuBhagwat" target="_blank" rel="noopener noreferrer" class="hover:text-blue-600 flex items-center transition duration-150 ease-in-out">
+                    <span class="lucide lucide-linkedin"></span>linkedin.com/in/RaghuBhagwat
+                </a>
+                 <span class="flex items-center">
+                    <span class="lucide lucide-map-pin"></span>Bangalore, India
+                </span>
+                 <span class="flex items-center">
+                    <span class="lucide lucide-languages"></span>English, Kannada, Hindi, Marathi
+                </span>
+            </div>
+        </header>
+
+        <section>
+            <h3 class="text-2xl font-semibold text-gray-800 mb-4 border-l-4 border-blue-500 pl-3 flex items-center"><span class="lucide lucide-briefcase"></span>Professional Summary</h3>
+            <p class="text-gray-700 leading-relaxed">
+                Versatile Planning & Project Management professional with extensive experience across Commercial, Retail, Residential, and Hospitality sectors. Proven expertise in high-rise residential, premium commercial office spaces, large-scale retail malls, and hospitality projects. Adept at project scheduling, budgeting, procurement, risk management, and stakeholder coordination. Known for implementing technology-driven solutions that enhance project efficiency and reduce costs. LEED Green Associate with a strong background in cost control, compliance, and sustainability.
+            </p>
+        </section>
+
+        <section>
+            <h3 class="text-2xl font-semibold text-gray-800 mb-6 border-l-4 border-blue-500 pl-3 flex items-center"><span class="lucide lucide-briefcase"></span>Professional Experience</h3>
+            <div class="relative pl-6 border-l-2 border-gray-200 ml-1"> <div class="mb-8 relative timeline-item pl-8"> <h4 class="text-lg font-semibold text-gray-900">Senior Project Manager - Planning (Mixed-Use Development)</h4>
+                    <p class="text-md font-medium text-blue-600">Ramsons Trendsquares | Bangalore, India</p>
+                    <p class="text-sm text-gray-500 mb-2">Jun 2024 – Present</p>
+                    <ul class="list-disc list-outside pl-5 text-gray-700 space-y-1 text-sm">
+                        <li>Driving planning and execution of a large-scale mixed-use development (residential, retail, commercial, hotel).</li>
+                        <li>Developed integrated master schedules ensuring synchronization across all verticals.</li>
+                        <li>Coordinated with multiple stakeholders (investors, contractors, consultants, engineers).</li>
+                        <li>Managed complex cash flow planning and cost tracking across multiple asset classes.</li>
+                        <li>Identified project risks (design bottlenecks, procurement delays, cost overruns) and implemented mitigation strategies.</li>
+                        <li>Ensured compliance with IGBC, RERA, safety, and hospitality standards.</li>
+                        <li>Oversaw procurement, contract management, and vendor coordination.</li>
+                        <li>Tracked project milestones and provided high-level reports.</li>
+                    </ul>
+                </div>
+
+                <div class="mb-8 relative timeline-item pl-8">
+                    <h4 class="text-lg font-semibold text-gray-900">Assistant Manager - Planning (High-Rise Residential Projects)</h4>
+                    <p class="text-md font-medium text-blue-600">Godrej Properties | Bangalore, India</p>
+                    <p class="text-sm text-gray-500 mb-2">2022 – 2024</p>
+                    <ul class="list-disc list-outside pl-5 text-gray-700 space-y-1 text-sm">
+                        <li>Led planning for luxury residential high-rise developments.</li>
+                        <li>Developed detailed project micro-schedules, tracking progress.</li>
+                        <li>Collaborated with architectural, structural, and MEP teams.</li>
+                        <li>Managed project budgets, tracking actual vs. planned costs.</li>
+                        <li>Led procurement planning, tendering, and vendor negotiations.</li>
+                        <li>Ensured IGBC Green Building compliance.</li>
+                        <li>Monitored project performance, addressing delays proactively.</li>
+                    </ul>
+                </div>
+
+                <div class="mb-8 relative timeline-item pl-8">
+                    <h4 class="text-lg font-semibold text-gray-900">Deputy Manager - Planning (Retail & Commercial Projects)</h4>
+                    <p class="text-md font-medium text-blue-600">Prestige Group | Bangalore, India</p>
+                    <p class="text-sm text-gray-500 mb-2">2019 – 2022</p>
+                    <ul class="list-disc list-outside pl-5 text-gray-700 space-y-1 text-sm">
+                        <li>Spearheaded planning and execution of large-scale retail malls and commercial spaces.</li>
+                        <li>Developed and maintained project schedules, cost forecasts, and risk registers.</li>
+                        <li>Led tendering and procurement strategy.</li>
+                        <li>Coordinated teams to resolve design challenges.</li>
+                        <li>Prepared detailed budget reports and financial models.</li>
+                        <li>Monitored work progress against timelines and quality benchmarks.</li>
+                    </ul>
+                </div>
+
+                <div class="mb-8 relative timeline-item pl-8">
+                    <h4 class="text-lg font-semibold text-gray-900">Deputy Manager - Development (Premium Commercial Office Spaces)</h4>
+                    <p class="text-md font-medium text-blue-600">RMZ Corp | Bangalore, India</p>
+                    <p class="text-sm text-gray-500 mb-2">2014 – 2019</p>
+                    <ul class="list-disc list-outside pl-5 text-gray-700 space-y-1 text-sm">
+                        <li>Managed execution of Grade-A commercial office buildings.</li>
+                        <li>Led project coordination across stakeholders, consultants, and contractors.</li>
+                        <li>Spearheaded BIM implementation (Autodesk Revit, Navisworks).</li>
+                        <li>Optimized construction debris management.</li>
+                        <li>Tracked CAPEX for CoWrks (PAN India), managing cost per sqft analysis.</li>
+                        <li>Led quantity surveying, billing, and contractor performance evaluations.</li>
+                    </ul>
+                </div>
+
+                 <div class="mb-8 relative timeline-item pl-8"> <h4 class="text-lg font-semibold text-gray-900">Site Engineer (Residential & Commercial Projects)</h4>
+                    <p class="text-md font-medium text-blue-600">RAA Design Studio | Vijayapura, India</p>
+                    <p class="text-sm text-gray-500 mb-2">2013 – 2014</p>
+                    <ul class="list-disc list-outside pl-5 text-gray-700 space-y-1 text-sm">
+                        <li>Assisted in architectural drafting and blueprint preparation.</li>
+                        <li>Supervised site execution, ensuring compliance with design standards.</li>
+                        <li>Managed material procurement and vendor coordination.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+         <section>
+            <h3 class="text-2xl font-semibold text-gray-800 mb-4 border-l-4 border-blue-500 pl-3 flex items-center"><span class="lucide lucide-graduation-cap"></span>Education & Certifications</h3>
+             <div class="space-y-4">
+                <div>
+                    <p class="font-semibold text-gray-800">Post Graduate Programme in Quantity Surveying</p>
+                    <p class="text-sm text-gray-600">National Institute of Construction Management and Research (NICMAR)</p>
+                    <p class="text-sm text-gray-500">2015 – 2017</p>
+                </div>
+                 <div>
+                    <p class="font-semibold text-gray-800">Bachelors Degree in Civil Engineering (70.43%)</p>
+                    <p class="text-sm text-gray-600">Visvesvaraya Technological University (VTU), Vijayapura, Karnataka</p>
+                     <p class="text-sm text-gray-500">2009 – 2013</p>
+                </div>
+                 <div>
+                     <p class="font-semibold text-gray-800 flex items-center">
+                         <span class="lucide lucide-award" style="color: #16a34a; margin-right: 0.3rem;"></span>LEED Green Associate
+                     </p>
+                     <p class="text-sm text-gray-600">Sustainable Building Certification (Scored 194/200)</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h3 class="text-2xl font-semibold text-gray-800 mb-6 border-l-4 border-blue-500 pl-3 flex items-center"><span class="lucide lucide-clipboard-list"></span>Key Projects</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+                <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition duration-150 ease-in-out">
+                    <h4 class="text-md font-semibold text-blue-700 mb-2">Ramsons Trendsquares</h4>
+                    <div class="space-y-2">
+                        <div>
+                            <p class="font-medium text-sm text-gray-800">East Park Residence, Bengaluru</p>
+                            <p class="text-xs text-gray-600">1.2 msf Res (600 Units), 1.2 msf Mall, 0.8 msf Office, 250 Keys Hotel</p>
+                        </div>
+                        <div>
+                            <p class="font-medium text-sm text-gray-800">Ramsons Trendsquares Phase 02, Bengaluru</p>
+                            <p class="text-xs text-gray-600">1.8 msf Res (900 Units), 1.2 msf Mall, 0.8 msf Office, 250 Keys Hotel</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition duration-150 ease-in-out">
+                    <h4 class="text-md font-semibold text-blue-700 mb-2">Godrej Properties</h4>
+                    <div class="space-y-2">
+                        <div>
+                            <p class="font-medium text-sm text-gray-800">Godrej Splendour, Bengaluru</p>
+                            <p class="text-xs text-gray-600">1.2 msf residential (1164 Units)</p>
+                        </div>
+                        </div>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition duration-150 ease-in-out">
+                    <h4 class="text-md font-semibold text-blue-700 mb-2">Prestige Group</h4>
+                    <div class="space-y-2">
+                        <div>
+                            <p class="font-medium text-sm text-gray-800">Prestige Forum REX Walk & Nilgiris, Bengaluru</p>
+                            <p class="text-xs text-gray-600">0.16 msf Retail & F&B</p>
+                        </div>
+                        <div>
+                            <p class="font-medium text-sm text-gray-800">Prestige Falcon City Mall & Auditorium, Bengaluru</p>
+                            <p class="text-xs text-gray-600">0.95 msf Mall & 0.1 msf Auditorium</p> </div>
+                         <div>
+                            <p class="font-medium text-sm text-gray-800">Prestige Alphatech, Pune</p>
+                            <p class="text-xs text-gray-600">0.91 msf Office Space</p>
+                        </div>
+                         <div>
+                            <p class="font-medium text-sm text-gray-800">Prestige Forum Kochi Mall, Kochi</p>
+                            <p class="text-xs text-gray-600">0.65 msf Shopping Mall</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition duration-150 ease-in-out">
+                    <h4 class="text-md font-semibold text-blue-700 mb-2">RMZ Corp</h4>
+                    <div class="space-y-2">
+                        <div>
+                            <p class="font-medium text-sm text-gray-800">RMZ Ecoworld, Bangalore</p>
+                            <p class="text-xs text-gray-600">3 msf Office Space (Part of 7 msf)</p> </div>
+                        <div>
+                            <p class="font-medium text-sm text-gray-800">Cowrks, PAN India</p>
+                            <p class="text-xs text-gray-600">800+ Seats</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 p-4 rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition duration-150 ease-in-out">
+                    <h4 class="text-md font-semibold text-blue-700 mb-2">RAA Design Studio</h4>
+                     <div class="space-y-2">
+                        <div>
+                            <p class="font-medium text-sm text-gray-800">Independent Houses & Commercial Buildings, Vijayapura</p>
+                            <p class="text-xs text-gray-600">30+ Buildings</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <h3 class="text-2xl font-semibold text-gray-800 mb-4 border-l-4 border-blue-500 pl-3 flex items-center"><span class="lucide lucide-wrench"></span>Technical Skills</h3>
+             <div class="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-4">
+                <div>
+                    <h4 class="text-md font-semibold text-gray-700 mb-2">Project Management:</h4>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">MS Project</span>
+                        <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">SAP ERP</span>
+                         <span class="bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">Power BI</span>
+                    </div>
+                </div>
+                 <div>
+                    <h4 class="text-md font-semibold text-gray-700 mb-2">Building Information Modeling (BIM):</h4>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-green-100 text-green-800 text-sm font-medium px-3 py-1 rounded-full">Autodesk Revit</span>
+                        <span class="bg-green-100 text-green-800 text-sm font-medium px-3 py-1 rounded-full">Navisworks</span>
+                    </div>
+                </div>
+                 <div>
+                    <h4 class="text-md font-semibold text-gray-700 mb-2">Data & Reporting Tools:</h4>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-yellow-100 text-yellow-800 text-sm font-medium px-3 py-1 rounded-full">Excel (Advanced)</span>
+                        <span class="bg-yellow-100 text-yellow-800 text-sm font-medium px-3 py-1 rounded-full">Power Play</span>
+                         <span class="bg-yellow-100 text-yellow-800 text-sm font-medium px-3 py-1 rounded-full">OneDrive</span>
+                    </div>
+                </div>
+                 <div>
+                    <h4 class="text-md font-semibold text-gray-700 mb-2">Contracts & Procurement:</h4>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-purple-100 text-purple-800 text-sm font-medium px-3 py-1 rounded-full">BOQ Analysis</span>
+                        <span class="bg-purple-100 text-purple-800 text-sm font-medium px-3 py-1 rounded-full">Tendering</span>
+                         <span class="bg-purple-100 text-purple-800 text-sm font-medium px-3 py-1 rounded-full">Vendor Coordination</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h3 class="text-2xl font-semibold text-gray-800 mb-4 border-l-4 border-blue-500 pl-3 flex items-center"><span class="lucide lucide-sparkles"></span>Key Strengths</h3>
+            <ul class="list-disc list-outside pl-5 text-gray-700 space-y-1">
+                <li>Expertise in Mixed-Use Developments (Residential, Retail, Commercial, Hospitality)</li>
+                <li>Strong Analytical & Problem-Solving Skills</li>
+                <li>Project Budgeting, Scheduling & Risk Management</li>
+                <li>Strategic Planning & Execution Across Multiple Sectors</li>
+                <li>Technology-Driven Project Optimization & Reporting</li>
+            </ul>
+        </section>
+
+        <footer class="text-center text-sm text-gray-500 pt-6 border-t border-gray-200 mt-10"> References available upon request. <br>
+            &copy; <script>document.write(new Date().getFullYear())</script> Raghavendra V Bhagwat. All Rights Reserved.
+        </footer>
+
+    </div> </body>
+</html>
